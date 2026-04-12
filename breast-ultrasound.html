@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breast Ultrasound Classification | Shreya Nair</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <main class="project-hero">
+    <div class="container">
+      <a class="back-link" href="../index.html">← Back to home</a>
+      <p class="eyebrow">Deep Learning</p>
+      <h1>Breast Ultrasound Image Classification</h1>
+	<p><strong>Team Project (5 members)</strong></p>
+      <p class="lead">Built and evaluated a deep learning pipeline for classifying breast ultrasound images, comparing a baseline CNN against fine-tuned ResNet18 to support medical decision-assistance use cases.</p>
+
+      <section class="metric-strip">
+        <div class="metric"><strong>Dataset</strong><span>780 ultrasound images across 3 classes</span></div>
+        <div class="metric"><strong>Best model</strong><span>Fine-tuned ResNet18</span></div>
+        <div class="metric"><strong>Result</strong><span>About 92–94% validation accuracy</span></div>
+      </section>
+<figure class="gallery-card">
+      <img src="../images/breast-ultrasound.png" alt="Dataset Overview">
+      <figcaption>Dataset Overview</figcaption>
+    </figure>
+ <figure class="gallery-card">
+      <img src="../images/breast-ultrasound2.png" alt="CNN Architecture">
+      <figcaption>CNN Architecture</figcaption>
+    </figure>
+ <figure class="gallery-card">
+      <img src="../images/breast-ultrasound3.png" alt="Resnet Performance">
+      <figcaption>Resnet Performance</figcaption>
+    </figure>
+      <section class="content-grid">
+        <article class="content-card content">
+          <h2>Overview</h2>
+          <p>This project examined how transfer learning can improve performance on a small, noisy medical imaging dataset. The central comparison was between a baseline convolutional model and a fine-tuned pretrained network.</p>
+          <h2>What I Did</h2>
+          <ul>
+            <li>Prepared and standardized ultrasound image inputs for modeling</li>
+            <li>Built a baseline CNN from scratch as a benchmark</li>
+            <li>Fine-tuned ResNet18 for a 3-class image classification task</li>
+            <li>Compared validation accuracy, convergence behavior, and generalization</li>
+            <li>Framed the system as decision support rather than diagnostic replacement</li>
+          </ul>
+        </article>
+        <aside class="content-card content">
+          <h2>Tools</h2>
+          <div class="tags"><span>Python</span><span>PyTorch</span><span>CNN</span><span>ResNet18</span><span>Transfer Learning</span></div>
+          <h2>Why It Matters</h2>
+          <p>This project demonstrates both implementation skill and awareness of the real-world deployment, ethical, and healthcare context around AI systems.</p>
+        </aside>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
