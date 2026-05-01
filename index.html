@@ -3,205 +3,250 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Shreya Nair | Portfolio</title>
+  <title>Shreya Nair | Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand">Shreya Nair</a>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">Shreya Nair</a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Analytics • Machine Learning • Business Insights</p>
+      <h1>Building data projects that turn analysis into decisions.</h1>
+
+      <p class="hero-copy">
+        I am currently a student in Duke Fuqua's MQM: Business Analytics program, with a concentration in strategy.
+        I’m interested in data analytics, statistical modeling, and business problem-solving.
+        My work combines dashboards, SQL analysis, predictive modeling, and strategy-focused research.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button secondary" href="#contact">Contact Me</a>
+      </div>
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Analytics • Machine Learning • Business Insights</p>
-          <h1>Building data projects that turn analysis into decisions.</h1>
-          <p class="hero-copy">
-            I am currently a student in Duke Fuqua's MQM: Business Analytics program, with a concentration in strategy. I'm interested in data analytics, statistical modelling, and business problem-solving.
-            My work combines dashboards, SQL analysis, predictive modeling, and strategy-focused research.
+    <div class="hero-card">
+      <div class="stat">
+        <span class="stat-label">Featured focus</span>
+        <span class="stat-value">Tableau • SQL • Python</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Portfolio theme</span>
+        <span class="stat-value">Problem → Analysis → Impact</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Strengths</span>
+        <span class="stat-value">Dashboards, ML, business-facing communication</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="eyebrow">Projects</p>
+      <h2>Featured Work</h2>
+      <p>These projects show my range across visualization, SQL analysis, predictive modeling, consulting, and deep learning.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- Tableau -->
+      <article class="project-card featured">
+        <img src="images/revenue-dashboard.png" alt="Revenue Intelligence Dashboard">
+        <div class="card-body">
+          <p class="project-type">Tableau Dashboard</p>
+          <h3>Revenue Intelligence Dashboard</h3>
+          <p>
+            Contributed to a multi-module Tableau dashboard analyzing ~$80M in revenue across product, geography, inventory, and sales performance.
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="#contact">Contact Me</a>
+          <div class="tags">
+            <span>Tableau</span><span>KPI Tracking</span><span>Segmentation</span><span>Business Intelligence</span>
           </div>
+          <a class="text-link" href="projects/revenue-intelligence.html">Open project →</a>
         </div>
-        <div class="hero-card">
-          <div class="stat">
-            <span class="stat-label">Featured focus</span>
-            <span class="stat-value">Tableau • SQL • Python</span>
+      </article>
+
+      <!-- Dognition -->
+      <article class="project-card featured">
+        <img src="images/dognition.png" alt="Dognition SQL Analysis">
+        <div class="card-body">
+          <p class="project-type">SQL Analysis</p>
+          <h3>Analyzing Dognition</h3>
+          <p>
+            Performed exploratory SQL analysis using joins, CTEs, and window functions to uncover customer behavior patterns and retention opportunities.
+          </p>
+          <div class="tags">
+            <span>SQL</span><span>CTEs</span><span>Window Functions</span><span>Customer Insights</span>
           </div>
-          <div class="stat">
-            <span class="stat-label">Strengths</span>
-            <span class="stat-value">Dashboards, ML, business-facing communication</span>
+          <a class="text-link" href="projects/dognition-sql.html">Open project →</a>
+        </div>
+      </article>
+
+      <!-- CAPSTONE  -->
+      <article class="project-card featured">
+        <img src="images/capstone2.png" alt="Clinical Pathway Simulation">
+        <div class="card-body">
+          <p class="project-type">Healthcare Analytics</p>
+          <h3>Clinical Pathway Simulation in Peripheral Artery Disease</h3>
+          <p>
+            Simulated PAD patient pathways using Synthea modules and built reusable analytics workflows for survival analysis, bottleneck profiling, and length-of-stay evaluation.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>Tableau</span><span>Healthcare Analytics</span><span>Synthea</span><span>Survival Analysis</span>
           </div>
+          <a class="text-link" href="projects/capstone.html">Open project →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ADDITIONAL PROJECTS -->
+    <div class="section-heading minor-heading">
+      <h2>Additional Projects</h2>
+    </div>
+
+    <div class="project-grid secondary-grid">
+
+      <!-- ELF -->
+      <article class="project-card">
+        <div class="card-body">
+          <p class="project-type">Strategy / Consulting</p>
+          <h3>e.l.f. Cosmetics: What Needs to Change</h3>
+          <p>
+            Developed a sustainability-led differentiation strategy in a saturated, price-sensitive market.
+          </p>
+          <div class="tags">
+            <span>Strategy</span><span>Industry Analysis</span><span>VRIN</span><span>Consumer Insights</span>
+          </div>
+          <a class="text-link" href="projects/elf-consulting.html">Open project →</a>
+        </div>
+      </article>
+
+      <!-- Breast -->
+      <article class="project-card">
+        <div class="card-body">
+          <p class="project-type">Deep Learning</p>
+          <h3>Breast Ultrasound Classification</h3>
+          <p>
+            Compared CNN and fine-tuned ResNet18 to classify ultrasound images for medical decision support.
+          </p>
+          <div class="tags">
+            <span>PyTorch</span><span>CNN</span><span>ResNet18</span><span>Healthcare AI</span>
+          </div>
+          <a class="text-link" href="projects/breast-ultrasound.html">Open project →</a>
+        </div>
+      </article>
+
+      <!-- Housing -->
+      <article class="project-card">
+        <div class="card-body">
+          <p class="project-type">Machine Learning</p>
+          <h3>Mortgage Risk & Property Valuation Modeling</h3>
+          <p>
+            Built a predictive model to estimate property values and support mortgage risk assessment and underwriting decisions.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>ML</span><span>Risk Analysis</span>
+          </div>
+          <a class="text-link" href="projects/house-price-prediction.html">Open project →</a>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section alt">
+  <div class="container narrow">
+    <div class="section-heading">
+      <p class="eyebrow">About</p>
+      <h2>Who I Am</h2>
+    </div>
+    <p class="body-large">
+      I enjoy building data-driven projects that connect technical work to practical outcomes.
+      Whether designing dashboards, writing SQL, or training models, I focus on making insights clear and decision-ready.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Skills</p>
+      <h2>Technical Toolkit</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-panel">
+        <h3>Analytics</h3>
+        <div class="tags">
+          <span>SQL</span><span>Excel</span><span>Tableau</span><span>Dashboard Design</span>
         </div>
       </div>
-    </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Featured Work</h2>
-          <p>These projects show my range across visualization, SQL analysis, predictive modeling, consulting, and deep learning.</p>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card featured">
-	<img src="images/revenue-dashboard.png" alt="Revenue Intelligence Dashboard">
-            <div class="card-body">
-              <p class="project-type">Tableau Dashboard</p>
-              <h3>Revenue Intelligence Dashboard</h3>
-              <p>
-               	Contributed to a multi-module Tableau dashboard analyzing ~$80M in revenue across product, geography, inventory, and sales                  performance to support business decision-making.
-              </p>
-              <div class="tags">
-                <span>Tableau</span><span>KPI Tracking</span><span>Segmentation</span><span>Business Intelligence</span>
-              </div>
-              <a class="text-link" href="projects/revenue-intelligence.html">Open project →</a>
-            </div>
-          </article>
-
-          <article class="project-card featured">
-		<img src="images/dognition.png" alt="Dognition Recommendations">
-            <div class="card-body">
-              <p class="project-type">SQL Analysis</p>
-              <h3>Analyzing Dognition</h3>
-              <p>
-                Performed exploratory SQL analysis using joins, CTEs, and window functions to uncover
-                customer behavior patterns and retention opportunities.
-              </p>
-              <div class="tags">
-                <span>SQL</span><span>CTEs</span><span>Window Functions</span><span>Customer Insights</span>
-              </div>
-              <a class="text-link" href="projects/dognition-sql.html">Open project →</a>
-            </div>
-          </article>
-
-          <article class="project-card featured">
-	<img src="images/house-prices2.png" alt="Property Evaluation">
-            <div class="card-body">
-              <p class="project-type">Machine Learning</p>
-              <h3>Mortgage Risk & Property Valuation Modeling</h3>
-              <p>
-                 Built a predictive modeling pipeline using housing data to estimate fair market value and support mortgage risk assessment and loan underwriting decisions.
-              </p>
-              <div class="tags">
-                <span>Python</span><span>ML</span><span>Neural Networks</span><span>Risk Analysis</span>
-              </div>
-              <a class="text-link" href="projects/house-price-prediction.html">Open project →</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="section-heading minor-heading">
-          <h2>Additional Projects</h2>
-        </div>
-
-        <div class="project-grid secondary-grid">
-          <article class="project-card">
-            <div class="card-body">
-              <p class="project-type">Strategy / Consulting</p>
-              <h3>e.l.f. Cosmetics: What Needs to Change</h3>
-              <p>
-                Developed a sustainability-led differentiation strategy for e.l.f. Cosmetics in a saturated,
-                price-sensitive market.
-              </p>
-              <div class="tags">
-                <span>Strategy</span><span>Industry Analysis</span><span>VRIN</span><span>Consumer Insights</span>
-              </div>
-              <a class="text-link" href="projects/elf-consulting.html">Open project →</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="card-body">
-              <p class="project-type">Deep Learning</p>
-              <h3>Breast Ultrasound Classification</h3>
-              <p>
-                Compared a baseline CNN and fine-tuned ResNet18 to classify breast ultrasound images for
-                decision-support use cases.
-              </p>
-              <div class="tags">
-                <span>PyTorch</span><span>CNN</span><span>ResNet18</span><span>Healthcare AI</span>
-              </div>
-              <a class="text-link" href="projects/breast-ultrasound.html">Open project →</a>
-            </div>
-          </article>
+      <div class="skill-panel">
+        <h3>Machine Learning</h3>
+        <div class="tags">
+          <span>Python</span><span>Pandas</span><span>PyTorch</span><span>Model Evaluation</span>
         </div>
       </div>
-    </section>
 
-    <section id="about" class="section alt">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Who I Am</h2>
-        </div>
-        <p class="body-large">
-          I enjoy building data-driven projects that connect technical work to practical outcomes. Whether I am
-          designing a dashboard, writing SQL, or training a predictive model, I focus on making the analysis
-          clear, useful, and decision-ready.
-        </p>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Technical Toolkit</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-panel">
-            <h3>Analytics</h3>
-            <div class="tags">
-              <span>SQL</span><span>Excel</span><span>Tableau</span><span>Dashboard Design</span><span>KPI Tracking</span><span>Exploratory Analysis</span>
-            </div>
-          </div>
-          <div class="skill-panel">
-            <h3>Machine Learning</h3>
-            <div class="tags">
-              <span>Python</span><span>Pandas</span><span>NumPy</span><span>PyTorch</span><span>Model Evaluation</span><span>Neural Networks</span>
-            </div>
-          </div>
-          <div class="skill-panel">
-            <h3>Business & Communication</h3>
-            <div class="tags">
-              <span>Business Insights</span><span>Strategy</span><span>Presentation Design</span><span>Data Storytelling</span><span>Research</span>
-            </div>
-          </div>
+      <div class="skill-panel">
+        <h3>Business</h3>
+        <div class="tags">
+          <span>Strategy</span><span>Insights</span><span>Storytelling</span>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="contact" class="section alt">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s Connect</h2>
-                </div>
-        <div class="contact-card">
-          <p><strong>Email:</strong> shreya.nair@duke.edu</p>
-	  <p><strong>Phone:</strong> 919-641-5944</p>
-	  <p><strong>LinkedIn:</strong> linkedin.com/in/shreyan1122</p>
-	<a class="button secondary" href="resume.pdf" target="_blank">Download Resume</a>
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="container narrow">
+    <div class="section-heading">
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s Connect</h2>
+    </div>
 
-        </div>
-      </div>
-    </section>
-  </main>
+    <div class="contact-card">
+      <p><strong>Email:</strong> shreya.nair@duke.edu</p>
+      <p><strong>Phone:</strong> 919-641-5944</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/shreyan1122</p>
+      <a class="button secondary" href="resume.pdf" target="_blank">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+</main>
 </body>
 </html>
