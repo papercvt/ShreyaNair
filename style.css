@@ -321,10 +321,11 @@ about-grid {
 
 .about-image img {
   width: 100%;
-  max-width: 260px;
+  max-width: 220px;   /* controls size */
+  height: auto;
   border-radius: 16px;
   display: block;
-  margin-left: auto;
+  margin-left: 0 auto;
 }
 @media (max-width: 768px) {
   .about-grid {
